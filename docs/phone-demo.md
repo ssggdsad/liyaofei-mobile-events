@@ -10,4 +10,4 @@
 
 页面播放器有播放控制、行内播放、全屏、单独打开和下载，没有自动播放。原始文件不变，网页上传项目中的兼容副本即可。当前实际媒体信息另见evidence/video-info.json。
 
-用户已授权公网发布；正式地址和线上验收结果在部署完成后记录，不把局域网预览地址当作提交地址。
+已按用户授权发布到 https://ssggdsad.github.io/liyaofei-mobile-events/mobile-zoom.html ，线上真实浏览器验证新版视频可播放，详细证据见evidence/live-results.json。此网页地址不依赖用户电脑开机。

@@ -1,0 +1,93 @@
+{
+  "verifiedAtShanghai": "2026-11-16 16:03",
+  "site": "https://ssggdsad.github.io/liyaofei-mobile-events/",
+  "repository": "https://github.com/ssggdsad/liyaofei-mobile-events",
+  "verifiedPublicationCommit": "b48648e7556784437250ec63f38dfceb5ab8b790",
+  "apiBuildStatus": "built",
+  "http": [
+    {
+      "file": "index.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": "1553"
+    },
+    {
+      "file": "mobile-gesture.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": "2853"
+    },
+    {
+      "file": "mobile-zoom.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": "2107",
+      "newVideoNotice": true
+    },
+    {
+      "file": "prompts.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": "1088"
+    },
+    {
+      "file": "wy_prompt.md",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "bytes": "5200",
+      "currentPromptRecorded": true
+    },
+    {
+      "file": "evidence/mobile-zoom-phone.mp4",
+      "status": 200,
+      "contentType": "video/mp4",
+      "bytes": "4890972"
+    }
+  ],
+  "home": {
+    "page": "home",
+    "cards": 2,
+    "noHorizontalOverflow": true
+  },
+  "gesture": {
+    "page": "gesture",
+    "counterAfterNext": "第 2/4 张"
+  },
+  "zoom": {
+    "page": "zoom",
+    "scaleAfterPinch": "2.00 ×"
+  },
+  "video": {
+    "page": "video",
+    "duration": 6.435,
+    "width": 1080,
+    "height": 1920,
+    "currentTime": 0.158428,
+    "error": null
+  },
+  "promptFrames": [
+    {
+      "url": "https://ssggdsad.github.io/liyaofei-mobile-events/prompts.html",
+      "hasCurrentUserPrompt": false,
+      "bodyLength": 286
+    },
+    {
+      "url": "https://ssggdsad.github.io/liyaofei-mobile-events/wy_prompt.md",
+      "hasCurrentUserPrompt": true,
+      "bodyLength": 4997
+    }
+  ],
+  "pageErrors": [],
+  "localUnitTests": {
+    "passed": 42,
+    "total": 42
+  },
+  "localBrowserTests": {
+    "passed": 35,
+    "total": 35
+  },
+  "userConfirmedNewVideo": true,
+  "oldProjectVideoReplaced": true,
+  "originalRecordingsPreserved": true,
+  "uploadMethod": "GitHub Git Data API; original git commit and tree hashes verified; non-forced ref fast-forward; local and remote main synchronized"
+}

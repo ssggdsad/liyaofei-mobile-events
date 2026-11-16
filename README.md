@@ -2,6 +2,11 @@
 
 姓名：李垚飞　学号：24001010723
 
+## 正式网页地址（交老师用这个）
+https://ssggdsad.github.io/liyaofei-mobile-events/
+
+已发布到GitHub Pages，电脑关机后仍由GitHub托管；不是192.168开头的临时局域网网址。发布与验证细节见docs/deployment.md。
+
 ## 怎么打开
 直接双击本目录 index.html，不需要 npm install、联网或启动后端。也可以在VS Code安装好的Live Server中打开。手机测试需要通过同一局域网静态服务器地址或以后部署的HTTPS地址访问，不能把电脑file://地址当成手机地址。
 
