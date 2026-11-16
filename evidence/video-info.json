@@ -1,0 +1,15 @@
+{
+  "sourceFileName": "video.mp4",
+  "recordedDate": "2026-11-16",
+  "durationSeconds": 6.435,
+  "bytes": 4890972,
+  "width": 1080,
+  "height": 1920,
+  "codec": "h264",
+  "audioCodec": "aac",
+  "userConfirmedGestureCoverage": true,
+  "observation": "抽查帧可见手机实体、两指和单指操作及图片倍率变化；用户明确确认动作均已拍到。",
+  "webFile": "evidence/mobile-zoom-phone.mp4",
+  "previousProjectVideoRemoved": true,
+  "sourceOriginalsRetained": true
+}

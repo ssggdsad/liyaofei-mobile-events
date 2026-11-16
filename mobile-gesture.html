@@ -1,0 +1,76 @@
+<!doctype html>
+<!-- 姓名：李垚飞 | 学号：24001010723 | 任务二：美食触摸卡片 -->
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="李垚飞的任务二：单指左右滑动，认识四道中华美食。原生触摸事件，离线可用。">
+  <title>食在指尖 · 美食触摸卡片 | 李垚飞</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="mobile-gesture.css">
+  <script src="mobile-gesture.js" defer></script>
+</head>
+<body class="lyf_gesture_page">
+  <header class="lyf_header">
+    <a class="lyf_brand" href="index.html">指尖交互实验室</a>
+    <nav class="lyf_nav" aria-label="作业导航">
+      <a href="index.html">作业首页</a>
+      <a href="mobile-gesture.html" aria-current="page">美食卡片</a>
+      <a href="mobile-zoom.html">图片查看器</a>
+      <a href="prompts.html">提示词记录</a>
+    </nav>
+  </header>
+
+  <main class="lyf_shell lyf_gesture_main">
+    <section class="lyf_food_intro" aria-labelledby="lyf_food_heading">
+      <p class="lyf_eyebrow">TOUCH EXPLORATION / 02</p>
+      <h1 id="lyf_food_heading">一划之间，<br>尝遍<span class="lyf_food_accent">人间烟火。</span></h1>
+      <p class="lyf_food_lead">把中华风味装进一张卡片。<br>轻轻向左一划，下一道好味即刻上桌。</p>
+      <div class="lyf_food_instruction"><span class="lyf_swipe_icon" aria-hidden="true">← →</span><span>单指左右滑动 · 一次遇见一道菜</span></div>
+      <p class="lyf_note lyf_food_rule">左滑下一道，右滑上一道。<br>上下滑动依然可以正常浏览页面。</p>
+      <a class="lyf_food_source" href="mobile-gesture.js">查看原生 JS 源码 <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section class="lyf_food_experience" aria-label="中华美食触摸卡片">
+      <div class="lyf_food_topline"><span>中华风味小集</span><span>FOOD COLLECTION</span></div>
+      <div id="lyf_touch_stage" class="lyf_touch_stage" tabindex="0" role="region" aria-roledescription="轮播" aria-label="美食卡片，可左右滑动或使用方向键" aria-describedby="lyf_food_help">
+        <div id="lyf_food_track" class="lyf_food_track">
+          <article class="lyf_food_card lyf_food_gongbao" role="group" aria-roledescription="幻灯片" aria-label="第1张，共4张：宫保鸡丁">
+            <div class="lyf_food_card_top"><span class="lyf_food_region">四川 · 川菜</span><span class="lyf_food_number">01 / 04</span></div>
+            <div class="lyf_food_art lyf_art_gongbao" aria-hidden="true"><span class="lyf_food_character">香</span><span class="lyf_food_plate"><span class="lyf_food_emoji">🍗</span><span class="lyf_plate_garnish">🌶️</span></span><span class="lyf_food_seal">川味</span></div>
+            <div class="lyf_food_copy"><p class="lyf_food_english">KUNG PAO CHICKEN</p><h2>宫保鸡丁</h2><p class="lyf_food_description">鸡丁鲜嫩，花生酥香，干辣椒与一抹酸甜热烈相遇。是舌尖跳动的烟火，也是家常饭桌的老朋友。</p><div class="lyf_food_tags"><span>香辣微甜</span><span>酥香鲜嫩</span></div></div>
+            <div class="lyf_food_card_bottom"><span>一口热烈，满桌欢喜</span><span aria-hidden="true">向左探索 →</span></div>
+          </article>
+          <article class="lyf_food_card lyf_food_fish" role="group" aria-roledescription="幻灯片" aria-label="第2张，共4张：西湖醋鱼" aria-hidden="true">
+            <div class="lyf_food_card_top"><span class="lyf_food_region">浙江 · 浙菜</span><span class="lyf_food_number">02 / 04</span></div>
+            <div class="lyf_food_art lyf_art_fish" aria-hidden="true"><span class="lyf_food_character">鲜</span><span class="lyf_food_plate"><span class="lyf_food_emoji">🐟</span><span class="lyf_plate_garnish">🌿</span></span><span class="lyf_food_seal">湖鲜</span></div>
+            <div class="lyf_food_copy"><p class="lyf_food_english">WEST LAKE FISH</p><h2>西湖醋鱼</h2><p class="lyf_food_description">细嫩鱼肉裹上晶亮的糖醋汁，酸甜清鲜，余味悠长。仿佛把江南的一湖烟雨，轻轻盛进了盘中。</p><div class="lyf_food_tags"><span>酸甜清鲜</span><span>江南风味</span></div></div>
+            <div class="lyf_food_card_bottom"><span>一湖烟雨，一筷清鲜</span><span aria-hidden="true">向左探索 →</span></div>
+          </article>
+          <article class="lyf_food_card lyf_food_duck" role="group" aria-roledescription="幻灯片" aria-label="第3张，共4张：北京烤鸭" aria-hidden="true">
+            <div class="lyf_food_card_top"><span class="lyf_food_region">北京 · 京味</span><span class="lyf_food_number">03 / 04</span></div>
+            <div class="lyf_food_art lyf_art_duck" aria-hidden="true"><span class="lyf_food_character">酥</span><span class="lyf_food_plate"><span class="lyf_food_emoji">🦆</span><span class="lyf_plate_garnish">🥒</span></span><span class="lyf_food_seal">京味</span></div>
+            <div class="lyf_food_copy"><p class="lyf_food_english">PEKING ROAST DUCK</p><h2>北京烤鸭</h2><p class="lyf_food_description">枣红鸭皮酥脆，鸭肉丰腴鲜香。薄饼卷起葱丝、黄瓜与甜面酱，一卷之间，是京城的讲究滋味。</p><div class="lyf_food_tags"><span>皮酥肉嫩</span><span>经典京味</span></div></div>
+            <div class="lyf_food_card_bottom"><span>薄饼一卷，京味入心</span><span aria-hidden="true">向左探索 →</span></div>
+          </article>
+          <article class="lyf_food_card lyf_food_tofu" role="group" aria-roledescription="幻灯片" aria-label="第4张，共4张：麻婆豆腐" aria-hidden="true">
+            <div class="lyf_food_card_top"><span class="lyf_food_region">四川 · 川菜</span><span class="lyf_food_number">04 / 04</span></div>
+            <div class="lyf_food_art lyf_art_tofu" aria-hidden="true"><span class="lyf_food_character">麻</span><span class="lyf_food_plate"><span class="lyf_food_emoji">🍲</span><span class="lyf_plate_garnish">🌶️</span></span><span class="lyf_food_seal">热辣</span></div>
+            <div class="lyf_food_copy"><p class="lyf_food_english">MAPO TOFU</p><h2>麻婆豆腐</h2><p class="lyf_food_description">嫩豆腐浸在红亮酱汁里，花椒的麻、豆瓣的辣和肉末的香层层交织。一勺拌饭，是暖胃又过瘾的满足。</p><div class="lyf_food_tags"><span>麻辣鲜香</span><span>热乎下饭</span></div></div>
+            <div class="lyf_food_card_bottom"><span>热辣有味，回味无穷</span><span aria-hidden="true">← 回味上一道</span></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="lyf_food_pagination"><div class="lyf_progress" aria-hidden="true"><span class="lyf_progress_dot lyf_is_current"></span><span class="lyf_progress_dot"></span><span class="lyf_progress_dot"></span><span class="lyf_progress_dot"></span></div><p id="lyf_card_counter" class="lyf_card_counter">第 1/4 张</p></div>
+      <div class="lyf_food_controls"><button id="lyf_previous" class="lyf_button lyf_button_secondary" type="button" aria-controls="lyf_touch_stage"><span aria-hidden="true">←</span> 上一道</button><button id="lyf_next" class="lyf_button lyf_food_next" type="button" aria-controls="lyf_touch_stage">下一道 <span aria-hidden="true">→</span></button></div>
+      <p id="lyf_gesture_status" class="lyf_gesture_status" role="status" aria-live="polite" aria-atomic="true">准备好了，向左滑动，尝尝下一道。</p>
+      <p id="lyf_food_help" class="lyf_note lyf_food_help">横滑至少 40px · 每次切换间隔 300ms<br>也可点击按钮，或聚焦卡片后使用 ← → 方向键。</p>
+      <noscript><p class="lyf_note">请启用 JavaScript 体验触摸切换；四道菜的介绍仍可在下方阅读。</p><style>.lyf_food_track{display:block}.lyf_touch_stage{overflow:visible}.lyf_food_card{margin-bottom:20px}.lyf_food_controls,.lyf_food_pagination,.lyf_gesture_status{display:none}</style></noscript>
+    </section>
+  </main>
+
+  <footer class="lyf_footer"><span>李垚飞 · 24001010723 · 移动端事件 / 任务二</span><span>原生 HTML / CSS / JS · <a href="prompts.html">真实提示词记录</a></span></footer>
+</body>
+</html>

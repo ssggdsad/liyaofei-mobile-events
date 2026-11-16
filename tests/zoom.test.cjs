@@ -1,0 +1,20 @@
+// 李垚飞 24001010723：测试真正供页面使用的几何函数，不复制一套假实现。
+const lyf_test = require('node:test');
+const lyf_assert = require('node:assert/strict');
+const lyf_fs = require('node:fs');
+const lyf_path = require('node:path');
+const lyf_file = lyf_path.join(__dirname, '..', 'zoom-math.js');
+const lyf_math = lyf_fs.existsSync(lyf_file) ? require(lyf_file) : {};
+const lyf_geometry = {width:400,height:300,baseWidth:400,baseHeight:250};
+lyf_test('提供页面使用的真实几何函数', () => { lyf_assert.equal(typeof lyf_math.lyf_zoomAt,'function'); });
+lyf_test('适应容器时保持原图宽高比', () => { lyf_assert.deepEqual(lyf_math.lyf_fitSize(1600,1000,400,300),{width:400,height:250}); });
+lyf_test('宽图适应横屏时也不拉伸', () => { lyf_assert.deepEqual(lyf_math.lyf_fitSize(1600,1000,800,300),{width:480,height:300}); });
+lyf_test('倍率不低于1且1倍居中', () => { lyf_assert.deepEqual(lyf_math.lyf_limit({scale:.3,x:80,y:-30},lyf_geometry),{scale:1,x:0,y:0}); });
+lyf_test('倍率不超过4', () => { lyf_assert.equal(lyf_math.lyf_limit({scale:8,x:0,y:0},lyf_geometry).scale,4); });
+lyf_test('拖动位移受实际图片边界限制', () => { lyf_assert.deepEqual(lyf_math.lyf_limit({scale:2,x:999,y:-999},lyf_geometry),{scale:2,x:200,y:-100}); });
+lyf_test('缩放2倍时两指中心对应图像点保持不动', () => { const lyf_a={x:50,y:30}; const lyf_s=lyf_math.lyf_zoomAt({scale:1,x:0,y:0},lyf_a,lyf_a,2,lyf_geometry);lyf_assert.deepEqual(lyf_s,{scale:2,x:-50,y:-30});lyf_assert.equal((lyf_a.x-lyf_s.x)/lyf_s.scale,50); });
+lyf_test('双指中点移动时图片同时平移且锚点不跳', () => { const lyf_s=lyf_math.lyf_zoomAt({scale:2,x:-50,y:-30},{x:50,y:30},{x:70,y:50},3,lyf_geometry);lyf_assert.deepEqual(lyf_s,{scale:3,x:-80,y:-40}); });
+lyf_test('到达倍率上限后移动中点仍然平滑', () => { const lyf_s=lyf_math.lyf_zoomAt({scale:4,x:0,y:0},{x:0,y:0},{x:20,y:10},8,lyf_geometry);lyf_assert.deepEqual(lyf_s,{scale:4,x:20,y:10}); });
+lyf_test('缩回1倍时即使锚点偏移也还原中心', () => { lyf_assert.deepEqual(lyf_math.lyf_zoomAt({scale:3,x:100,y:50},{x:20,y:30},{x:20,y:30},1,lyf_geometry),{scale:1,x:0,y:0}); });
+lyf_test('横竖屏变化保留倍率并按新尺寸缩放位移', () => { const lyf_next={width:800,height:400,baseWidth:640,baseHeight:400};lyf_assert.deepEqual(lyf_math.lyf_resizeState({scale:3,x:100,y:-30},lyf_geometry,lyf_next),{scale:3,x:160,y:-48}); });
+lyf_test('图像小于容器的轴不可拖动', () => { lyf_assert.equal(lyf_math.lyf_limit({scale:1.1,x:8,y:100},lyf_geometry).y,0); });

@@ -1,0 +1,150 @@
+{
+  "timestamp": "2026-11-16T07:44:22.062Z",
+  "browser": "Microsoft Edge / Chromium (headless)",
+  "method": "CDP Input.dispatchTouchEvent, mobile 390x844 / landscape 844x390 / desktop 1440x1000",
+  "realPhoneVerified": false,
+  "passed": 35,
+  "total": 35,
+  "results": [
+    {
+      "name": "任务三本地图片加载与初始1倍居中",
+      "passed": true
+    },
+    {
+      "name": "原图单指拖动不能移出边界",
+      "passed": true
+    },
+    {
+      "name": "CDP真实双指缩放为2倍且非中心锚点不跳",
+      "passed": true
+    },
+    {
+      "name": "双指缩放上限为4倍",
+      "passed": true
+    },
+    {
+      "name": "双指缩放下限为1倍且自动居中",
+      "passed": true
+    },
+    {
+      "name": "手机双击1倍放大到2倍",
+      "passed": true
+    },
+    {
+      "name": "手机再次双击还原为1倍",
+      "passed": true
+    },
+    {
+      "name": "拖动不是双击，不误触放大",
+      "passed": true
+    },
+    {
+      "name": "双指转单指重新记录基准，不跳动",
+      "passed": true
+    },
+    {
+      "name": "捏合后单次轻点不会误当双击",
+      "passed": true
+    },
+    {
+      "name": "放大后拖动限制在图片边界",
+      "passed": true
+    },
+    {
+      "name": "touchcancel中断后可继续缩放，不残留双击状态",
+      "passed": true
+    },
+    {
+      "name": "操作区横滑不带动整页滚动",
+      "passed": true
+    },
+    {
+      "name": "横竖屏变化保留倍率并重设边界",
+      "passed": true
+    },
+    {
+      "name": "区外手指不参与捏合，抬起后区内手指可继续拖动",
+      "passed": true
+    },
+    {
+      "name": "缩放动画中再次触摸接管当前可见状态，不跳到终点",
+      "passed": true
+    },
+    {
+      "name": "390px图片页无横向溢出与关键样式正确",
+      "passed": true
+    },
+    {
+      "name": "任务二四道菜与初始计数",
+      "passed": true
+    },
+    {
+      "name": "任务二39px短距离误触不切换",
+      "passed": true
+    },
+    {
+      "name": "任务二纵向滑动不误切换",
+      "passed": true
+    },
+    {
+      "name": "任务二有效左滑切换下一道且页面不误滚",
+      "passed": true
+    },
+    {
+      "name": "任务二300ms内快速连滑不跳两张",
+      "passed": true
+    },
+    {
+      "name": "任务二等待冷却后可继续切换",
+      "passed": true
+    },
+    {
+      "name": "任务二右滑回到上一道",
+      "passed": true
+    },
+    {
+      "name": "任务二首尾有提示且不越界",
+      "passed": true
+    },
+    {
+      "name": "任务二多指不误切换",
+      "passed": true
+    },
+    {
+      "name": "任务二touchcancel后可正常重新滑动",
+      "passed": true
+    },
+    {
+      "name": "任务二300ms动画、pan-y和390px布局",
+      "passed": true
+    },
+    {
+      "name": "任务三手机实拍视频加载并可播放，390px无横溢",
+      "passed": true
+    },
+    {
+      "name": "作业首页入口与真实提示词原文件",
+      "passed": true
+    },
+    {
+      "name": "手机首页无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "1440px首页与图片页布局无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "桌面鼠标双击放大、拖动与还原",
+      "passed": true
+    },
+    {
+      "name": "file协议直接双击也可加载图片与记录入口",
+      "passed": true
+    },
+    {
+      "name": "没有页面JS错误或404资源",
+      "passed": true
+    }
+  ]
+}

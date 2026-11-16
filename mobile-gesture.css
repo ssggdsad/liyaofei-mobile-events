@@ -1,0 +1,57 @@
+/* 李垚飞 24001010723 · 任务二；仅作用于美食卡片页，不覆盖共享样式。 */
+.lyf_gesture_main{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1fr);gap:80px;align-items:center;padding-top:52px;padding-bottom:8px}
+.lyf_food_intro{padding-bottom:72px;min-width:0}
+.lyf_food_intro h1{font-size:clamp(38px,4.1vw,56px);line-height:1.3;letter-spacing:-.055em;margin:18px 0 24px;font-weight:850}
+.lyf_food_accent{color:#d65032}
+.lyf_food_lead{font-size:16px;line-height:1.95;color:#676b62;margin:0 0 30px}
+.lyf_food_instruction{display:flex;align-items:center;gap:12px;font-size:13px;font-weight:650}
+.lyf_swipe_icon{display:inline-flex;align-items:center;justify-content:center;width:50px;height:40px;border:1px solid #d9d3c6;border-radius:22px;font-size:18px;letter-spacing:5px;padding-left:5px;color:#d65032}
+.lyf_food_rule{margin:14px 0 24px}
+.lyf_food_source{font-size:12px;text-decoration:none;border-bottom:1px solid #bcb8ad;padding-bottom:5px}
+.lyf_food_source span{margin-left:14px}
+.lyf_food_experience{min-width:0;max-width:500px;width:100%;justify-self:end}
+.lyf_food_topline{display:flex;align-items:center;justify-content:space-between;font-size:11px;color:#686b63;letter-spacing:.12em;margin-bottom:14px}
+.lyf_food_topline span:last-child{font-size:9px;letter-spacing:.15em}
+.lyf_touch_stage{width:100%;border-radius:20px;overflow:hidden;touch-action:pan-y;user-select:none;-webkit-user-select:none;box-shadow:0 18px 44px #58453319;outline-offset:6px}
+.lyf_touch_stage:focus-visible{outline:3px solid #d65032}
+.lyf_food_track{display:flex;width:100%;transition:transform .3s ease;will-change:transform}
+.lyf_food_card{flex:0 0 100%;min-width:0;position:relative;overflow:hidden;padding:24px 30px 20px;color:#252a2a;background:linear-gradient(145deg,#fae8cd 0%,#f2cb9e 48%,#e8ab83 100%)}
+.lyf_food_fish{background:linear-gradient(145deg,#edf2db 0%,#d2e3c1 48%,#b9cfac 100%)}
+.lyf_food_duck{background:linear-gradient(145deg,#f9e4ce 0%,#ecc7a5 48%,#d99b7a 100%)}
+.lyf_food_tofu{background:linear-gradient(145deg,#fbe7d9 0%,#f0bbaa 48%,#e4a291 100%)}
+.lyf_food_card_top{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:11px}
+.lyf_food_region{padding:4px 10px;border:1px solid #252a2a26;border-radius:100px;background:#fff9}
+.lyf_food_number{letter-spacing:.18em;font-size:10px;font-variant-numeric:tabular-nums}
+.lyf_food_art{height:180px;position:relative;display:flex;align-items:center;justify-content:center;margin:6px 0 0}
+.lyf_food_character{position:absolute;left:0;top:8px;font-size:145px;line-height:1.1;font-weight:900;color:#a64e2630;transform:rotate(-12deg);font-family:'STKaiti','KaiTi',serif}
+.lyf_food_plate{position:relative;width:178px;height:142px;border:8px solid #fffcf2;border-radius:50%;display:flex;align-items:center;justify-content:center;background:radial-gradient(ellipse,#fff3dc 48%,#e4c69a 50%,#fffaf0 54%);box-shadow:6px 18px 24px #7d4c3329;transform:rotate(-12deg)}
+.lyf_food_emoji{font-size:83px;line-height:1;filter:drop-shadow(2px 5px 2px #7e3f3029);transform:rotate(12deg)}
+.lyf_plate_garnish{position:absolute;right:-7px;bottom:-6px;font-size:43px;transform:rotate(12deg)}
+.lyf_food_seal{position:absolute;right:1px;top:24px;writing-mode:vertical-rl;border:1px solid #9b442e;border-radius:4px;color:#9b442e;padding:5px 2px;letter-spacing:.12em;font-size:11px;transform:rotate(7deg);font-family:'STKaiti','KaiTi',serif}
+.lyf_art_fish .lyf_food_character{color:#426a3f30}
+.lyf_art_fish .lyf_food_seal{color:#496449;border-color:#496449}
+.lyf_art_duck .lyf_food_character{color:#9d532d30}
+.lyf_art_tofu .lyf_food_character{color:#a13c3c30}
+.lyf_food_english{font-size:9px;letter-spacing:.19em;margin:0 0 5px;font-weight:650;color:#564338}
+.lyf_food_copy h2{font-size:33px;line-height:1.3;margin:0 0 13px;font-weight:850;letter-spacing:.06em}
+.lyf_food_description{font-size:13px;line-height:1.9;min-height:74px;margin:0;max-width:355px}
+.lyf_food_tags{display:flex;gap:8px;flex-wrap:wrap;margin:17px 0 21px}
+.lyf_food_tags span{font-size:10px;padding:3px 9px;border:1px solid #252a2a26;border-radius:4px;background:#fff3}
+.lyf_food_card_bottom{border-top:1px solid #252a2a26;padding-top:13px;display:flex;justify-content:space-between;gap:8px;font-size:10px}
+.lyf_food_card_bottom span:last-child{white-space:nowrap}
+.lyf_food_pagination{display:flex;align-items:center;justify-content:space-between;padding:19px 0 14px}
+.lyf_progress{display:flex;gap:6px;align-items:center}
+.lyf_progress_dot{height:5px;width:5px;border-radius:5px;background:#d4cec0;transition:width .3s,background .3s}
+.lyf_progress_dot.lyf_is_current{width:23px;background:#d65032}
+.lyf_card_counter{margin:0;font-size:12px;color:#676b62;font-variant-numeric:tabular-nums}
+.lyf_food_controls{display:flex;gap:12px}
+.lyf_food_controls .lyf_button{flex:1;min-width:0;min-height:48px;font-size:13px;border-radius:8px}
+.lyf_food_next{background:#d65032;border-color:#d65032}
+.lyf_food_controls .lyf_button[data-lyf-boundary=true]{opacity:.68}
+.lyf_gesture_status{font-size:12px;color:#5a5e54;min-height:42px;line-height:1.7;margin:14px 0 0;text-align:center;overflow-wrap:anywhere}
+.lyf_food_help{font-size:10px;text-align:center;line-height:1.8;margin:5px 0 0}
+@media(min-width:1200px){.lyf_food_art{height:190px}}
+@media(max-width:900px){.lyf_gesture_main{gap:35px}.lyf_food_intro h1{font-size:38px}.lyf_food_card{padding:22px}.lyf_food_description{min-height:99px}}
+@media(max-width:650px){.lyf_gesture_main{grid-template-columns:minmax(0,1fr);gap:28px;padding-top:30px}.lyf_food_intro{padding-bottom:0}.lyf_food_intro h1{font-size:37px;margin:12px 0 15px}.lyf_food_lead{font-size:14px;line-height:1.8;margin-bottom:16px}.lyf_food_instruction{font-size:11px;gap:10px}.lyf_swipe_icon{height:33px;width:43px;font-size:15px}.lyf_food_rule{font-size:11px;margin:10px 0 14px}.lyf_food_source{font-size:11px}.lyf_food_experience{justify-self:center;max-width:430px}.lyf_food_topline{margin-bottom:12px}.lyf_food_card{padding:20px 23px 18px}.lyf_food_art{height:158px}.lyf_food_plate{width:159px;height:126px}.lyf_food_character{font-size:131px;top:7px}.lyf_food_emoji{font-size:74px}.lyf_plate_garnish{font-size:37px}.lyf_food_copy h2{font-size:31px;margin-bottom:12px}.lyf_food_description{font-size:12px;min-height:69px}.lyf_food_tags{margin:14px 0 18px}.lyf_food_card_bottom{font-size:9px}.lyf_gesture_status{min-height:41px}.lyf_food_help{font-size:10px}}
+@media(max-width:350px){.lyf_food_intro h1{font-size:32px}.lyf_food_card{padding:18px}.lyf_food_description{min-height:92px}.lyf_food_card_bottom{font-size:8px}}
+@media(prefers-reduced-motion:reduce){.lyf_food_track,.lyf_progress_dot{transition:none}}
